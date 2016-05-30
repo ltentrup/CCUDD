@@ -57,6 +57,7 @@
 /* Nested includes                                                           */
 /*---------------------------------------------------------------------------*/
 
+#include <stdio.h>
 #include <inttypes.h>
 
 /*---------------------------------------------------------------------------*/
@@ -290,7 +291,7 @@ typedef void (*DD_TOHFP)(DdManager *, void *);
   @see Cudd_NotCond
 
 */
-#define Cudd_Not(node) ((DdNode *)((uintptr_t)(node) ^ (uintptr_t) 01))
+DdNode * Cudd_Not(DdNode * node);
 
 
 /**

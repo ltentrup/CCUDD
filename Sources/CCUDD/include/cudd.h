@@ -291,9 +291,7 @@ typedef void (*DD_TOHFP)(DdManager *, void *);
   @see Cudd_NotCond
 
 */
-DdNode * Cudd_Not(DdNode * node) {
-    return ((DdNode *)((uintptr_t)(node) ^ (uintptr_t) 01)); 
-}
+DdNode * Cudd_Not(DdNode * node);
 
 
 /**
