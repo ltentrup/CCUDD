@@ -86,7 +86,11 @@ static int addMultiplicityGroups (DdManager *dd, MtrNode *treenode, int multipli
 
 
 DdNode * Cudd_Not(DdNode * node) {
-    return ((DdNode *)((uintptr_t)(node) ^ (uintptr_t) 01)); 
+    return (DdNode *)((uintptr_t)(node) ^ (uintptr_t) 01); 
+}
+
+int Cudd_IsComplement(DdNode * node) {
+    return (int) ((uintptr_t) (node) & (uintptr_t) 01);
 }
 
 /**

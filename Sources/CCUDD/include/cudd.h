@@ -345,7 +345,7 @@ DdNode * Cudd_Not(DdNode * node);
   @see Cudd_Regular Cudd_Complement
 
 */
-#define Cudd_IsComplement(node) ((int) ((uintptr_t) (node) & (uintptr_t) 01))
+int Cudd_IsComplement(DdNode * node);
 
 
 /**

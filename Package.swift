@@ -1,7 +1,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "CCUDDTest",
+    name: "CCUDD",
     targets: [
         Target(name: "CCUDD"),
     ]
